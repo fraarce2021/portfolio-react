@@ -1,6 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.personal-logo {
+    padding-left: 20px;
+    width: 110px;
+}
+
+.personal-logo:hover,
+.ul-nav-hero li {
+    cursor: pointer;
+}
+
+.ul-nav-hero li:hover {
+    color: red;
+    border-bottom: dotted 3px;
+}
+
+.container-hero {
+    @apply bg-white h-screen flex flex-col justify-center items-center;
+}
+
+.container-hero {
+    background-image: url('images/unnamed.jpg');
+    background-size: cover;
+    /* filter: invert(1); */
+    height: 90vh;
+    filter: blur(10px);
+    transition: filter 0.4s ease-in-out;
+}
+
+.title-hero {
+    height: 20vh;
+}
+
+.title-hero h1 {
+    margin-top: 5vh;
+    color: white;
+    /* filter: blur(8px);
+    cursor: default;
+    transition: filter 0.5s ease-in-out; */
+}
+
+.container-hero:hover {
+    /* filter: blur(0); */
+    filter: blur(0);
+}
+
+.button-hero {
+    /* filter: invert(1); */
+    background-color: #485c8e;
+    cursor: pointer;
+    padding-top: 10pxs
+}
+
 .menu-card {
     @apply flex flex-col justify-center items-center bg-white h-screen font-mono py-40;
 }
