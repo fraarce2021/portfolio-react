@@ -1,6 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    scrollbar-face-color: #646464;
+    scrollbar-base-color: #646464;
+    scrollbar-3dlight-color: #646464;
+    scrollbar-highlight-color: #646464;
+    scrollbar-track-color: #000;
+    scrollbar-arrow-color: #000;
+    scrollbar-shadow-color: #646464;
+    scrollbar-dark-shadow-color: #646464;
+}
+
+ ::-webkit-scrollbar {
+    width: 8px;
+    height: 3px;
+}
+
+ ::-webkit-scrollbar-button {
+    background-color: #666;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: #646464;
+}
+
+ ::-webkit-scrollbar-track-piece {
+    background-color: #000;
+}
+
+ ::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #666;
+    border-radius: 3px;
+}
+
+ ::-webkit-scrollbar-corner {
+    background-color: #646464;
+}
+
+ ::-webkit-resizer {
+    background-color: #666;
+}
+
 .personal-logo {
     padding-left: 20px;
     width: 110px;
@@ -21,7 +63,7 @@
 }
 
 .container-hero {
-    background-image: url('images/unnamed.jpg');
+    background-image: url('images/hero.png');
     background-size: cover;
     /* filter: invert(1); */
     height: 90vh;
@@ -30,7 +72,7 @@
 }
 
 .title-hero {
-    height: 20vh;
+    height: 40vh;
 }
 
 .title-hero h1 {
@@ -48,7 +90,6 @@
 
 .button-hero {
     /* filter: invert(1); */
-    background-color: #485c8e;
     cursor: pointer;
     padding-top: 10pxs
 }
